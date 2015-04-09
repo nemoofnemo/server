@@ -1,21 +1,6 @@
-#include "server.h"
+#include "taskDataStructure.h"
 
-int main(void){
-	Server srv;
-	puts("[main]:program start");
-	
-	taskManager.registerQueue( "123456" , "qwerty" );
-	puts("[main]:test register success");
+int main( void ){
 
-	puts("[main]:processTask thread start");
-	HANDLE h = (HANDLE)_beginthreadex( NULL , 0 , processTasks , NULL , 0 , NULL );
-	//WaitForSingleObject( h , INFINITE );
-	
-	puts("[main]:start server");
-	srv.startListening();
-	//taskManager.printAll();
 
-	puts("[main]:program end");
-	
-	return 0;
 }
